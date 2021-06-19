@@ -43,7 +43,6 @@ public class ProcessingServiceImpl implements ProcessingService {
             lastRemoved = str.charAt(0);
             while (str.length() > 1 && str.charAt(0) == str.charAt(1))
                 str = str.substring(1, str.length());
-
             str = str.substring(1, str.length());
             return removeDuplicateHelper(str, lastRemoved);
         }
